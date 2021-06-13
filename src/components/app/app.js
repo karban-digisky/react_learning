@@ -21,7 +21,7 @@ export default class App extends Component{
             ]
         }
         this.deleteItem = this.deleteItem.bind(this);
-        this.addteItem = this.addItem.bind(this);
+        this.addItem = this.addItem.bind(this);
         this.onToggleImportant = this.onToggleImportant.bind(this);
         this.onToggleLiked = this.onToggleLiked.bind(this);
 
@@ -46,7 +46,7 @@ export default class App extends Component{
             important: false,
             id: this.maxId++
         }
-        this.state(({data})=>{
+        this.setState(({data})=>{
             const newArr = [...data, newItem];
             return {
                data: newArr
