@@ -4,15 +4,15 @@ import './post-list-item.css'
 
 export default class PostListItem extends Component{
 
-    constructor(props){
-        super(props);
-        this.state = {
-            important: false,
-            like: false 
-        }
-        // this.onImportant = this.onImportant.bind(this);
-        // this.onLike = this.onLike.bind(this);
-    }
+    // constructor(props){
+    //     super(props);
+    //     this.state = {
+    //         important: false,
+    //         like: false 
+    //     }
+    //     // this.onImportant = this.onImportant.bind(this);
+    //     // this.onLike = this.onLike.bind(this);
+    // }
 
     // onImportant(){
     //     this.setState(({important, like}) => ({
@@ -28,7 +28,7 @@ export default class PostListItem extends Component{
 
     render(){
 
-        const{label, onDelete, important, like, onToggleImportant, onToggleLiked} = this.props;
+        const {label, onDelete, important, like, onToggleImportant, onToggleLiked} = this.props;
 
         let classNames = 'app-list-item d-flex justify-content-between';
         if (important) {
