@@ -62,7 +62,7 @@ export default class App extends Component{
             const index = data.findIndex(elem => elem.id === id);
 
             const old = data[index];
-            const newItem = {... old, important: ! old.important};
+            const newItem = {...old, important: !old.important};
 
             const newArr = [...data.slice(0, index), newItem, ...data.slice(index + 1)];
         return {
@@ -76,7 +76,7 @@ export default class App extends Component{
             const index = data.findIndex(elem => elem.id === id);
 
             const old = data[index];
-            const newItem = {... old, like: ! old.like};
+            const newItem = {...old, like: !old.like};
 
             const newArr = [...data.slice(0, index), newItem, ...data.slice(index + 1)];
         return {
